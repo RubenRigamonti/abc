@@ -1,0 +1,18 @@
+Creare delle rotte (congruenti fra i vari punti) in modo che permettano:
+   1. Restituire l'elenco dei libretti: GET/booklets
+	Restituire il singolo libretto dello studente: GET/booklets{id}
+ 
+   2. Restituire tutti i voti dei corsi: GET /courses/votes
+	Restituire tutti i voti del singolo corso: GET /courses/{id}/votes
+
+   3. Permettere di creare o sostituire il voto di uno studente: PUT /booklets/{id_booklet}/votes/{id_vote}
+
+   4. Restituire tutti i voti pari a 30 in tutte le materie: GET /courses/votes?vote=30
+	Restituire tutti i voti pari a 30 in una materia specifica: GET /courses/{id_course}/votes?vote=30
+
+   5. Eliminare uno studente: DELETE /students/{id_student}
+	Inserire uno studente:	POST /students
+ 	Modificare uno studente: PUT /students/{id_student}
+
+   6. Modificare il nome di un corso: PUT /courses/{id_course}
+
